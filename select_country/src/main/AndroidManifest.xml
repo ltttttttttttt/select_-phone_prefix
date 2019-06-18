@@ -2,6 +2,6 @@
     package="com.lt.select_country" >
 
     <application>
-        <activity android:name=".SelectCountryActivity" />
+        <activity android:name=".LtSelectCountryActivity" />
     </application>
 </manifest>
