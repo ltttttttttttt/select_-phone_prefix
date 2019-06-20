@@ -1,8 +1,9 @@
+
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.github.dcendents.android-maven'//this
-group='com.github.ltttttttttttt'//this
+//apply plugin: 'com.github.dcendents.android-maven'//this
+//group='com.github.ltttttttttttt'//this
 
 android {
     compileSdkVersion 28
@@ -37,6 +38,18 @@ android {
 
 }
 
+project.ext {
+    mavDevelopers = ["Fe":"ltttttttttttt"]
+    mavSiteUrl = "https://github.com/sky-uk/gradle-maven-plugin"
+    mavGitUrl = mavSiteUrl + '.git'
+    mavProjectName = 'select_country'
+    mavPublishToInternalRepo = true
+    mavRepoInternalUrl = "path/to/internal/repo"
+    mavLibraryLicenses = ["Apache-2.0":'http://www.apache.org/licenses/LICENSE-2.0.txt']
+    mavLibraryDescription = "This is a select country Android library"
+    mavVersion = "1.0.2"
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:25.3.1'
@@ -46,3 +59,4 @@ dependencies {
 repositories {
     mavenCentral()
 }
+apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'
