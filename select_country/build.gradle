@@ -2,8 +2,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
-//apply plugin: 'com.github.dcendents.android-maven'//this
-//group='com.github.ltttttttttttt'//this
 
 android {
     compileSdkVersion 28
@@ -35,7 +33,6 @@ android {
         //renderscript.srcDirs = ['src']
         //jniLibs.srcDirs = ['jni']
     }
-
 }
 
 project.ext {
@@ -59,4 +56,3 @@ dependencies {
 repositories {
     mavenCentral()
 }
-apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'
