@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
 
             return@setSelectListener false
         }
-
     }
 
     fun onClick(v: View?) {
